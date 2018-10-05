@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DiscHostService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DiscHostService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfDisc">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Disc" nillable="true" type="tns:Disc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDisc" nillable="true" type="tns:ArrayOfDisc" />
+  <xs:complexType name="Disc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BandName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cd_Date" type="xs:int" />
+      <xs:element minOccurs="0" name="FormatName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Disc" nillable="true" type="tns:Disc" />
+  <xs:complexType name="ArrayOfSellInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SellInfo" nillable="true" type="tns:SellInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSellInfo" nillable="true" type="tns:ArrayOfSellInfo" />
+  <xs:complexType name="SellInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BandDate" type="xs:int" />
+      <xs:element minOccurs="0" name="BandName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CDName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cd_Date" type="xs:int" />
+      <xs:element minOccurs="0" name="DateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FormatName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SellerName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SellInfo" nillable="true" type="tns:SellInfo" />
+  <xs:complexType name="ArrayOfGroupInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GroupInfo" nillable="true" type="tns:GroupInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGroupInfo" nillable="true" type="tns:ArrayOfGroupInfo" />
+  <xs:complexType name="GroupInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cd_Date" type="xs:int" />
+      <xs:element minOccurs="0" name="Format" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SellingCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GroupInfo" nillable="true" type="tns:GroupInfo" />
+</xs:schema>

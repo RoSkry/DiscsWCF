@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DiscInfo" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IDiscInfo_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_IDiscInfo_AddDiscBand_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DiscHostService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDiscInfo_ShowAllDiscs_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShowAllDiscs" />
+  </wsdl:message>
+  <wsdl:message name="IDiscInfo_ShowAllDiscs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShowAllDiscsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDiscInfo_AllSellInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AllSellInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDiscInfo_AllSellInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AllSellInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDiscInfo_TotalAmountSellGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:TotalAmountSellGroup" />
+  </wsdl:message>
+  <wsdl:message name="IDiscInfo_TotalAmountSellGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TotalAmountSellGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDiscInfo_MostPopularGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:MostPopularGroup" />
+  </wsdl:message>
+  <wsdl:message name="IDiscInfo_MostPopularGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MostPopularGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDiscInfo_AddDiscBand_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDiscBand" />
+  </wsdl:message>
+  <wsdl:message name="IDiscInfo_AddDiscBand_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDiscBandResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDiscInfo_AddSell_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSell" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IDiscInfo">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ShowAllDiscs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDiscInfo/ShowAllDiscs" message="tns:IDiscInfo_ShowAllDiscs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDiscInfo/ShowAllDiscsResponse" message="tns:IDiscInfo_ShowAllDiscs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="AllSellInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDiscInfo/AllSellInfo" message="tns:IDiscInfo_AllSellInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDiscInfo/AllSellInfoResponse" message="tns:IDiscInfo_AllSellInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="TotalAmountSellGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDiscInfo/TotalAmountSellGroup" message="tns:IDiscInfo_TotalAmountSellGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDiscInfo/TotalAmountSellGroupResponse" message="tns:IDiscInfo_TotalAmountSellGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="MostPopularGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDiscInfo/MostPopularGroup" message="tns:IDiscInfo_MostPopularGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDiscInfo/MostPopularGroupResponse" message="tns:IDiscInfo_MostPopularGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="AddDiscBand">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDiscInfo/AddDiscBand" message="tns:IDiscInfo_AddDiscBand_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDiscInfo/AddDiscBandResponse" message="tns:IDiscInfo_AddDiscBand_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="AddSell">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDiscInfo/AddSell" message="tns:IDiscInfo_AddSell_InputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IDiscInfo" type="tns:IDiscInfo">
+    <wsp:PolicyReference URI="#NetTcpBinding_IDiscInfo_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="ShowAllDiscs">
+      <soap12:operation soapAction="http://tempuri.org/IDiscInfo/ShowAllDiscs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AllSellInfo">
+      <soap12:operation soapAction="http://tempuri.org/IDiscInfo/AllSellInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TotalAmountSellGroup">
+      <soap12:operation soapAction="http://tempuri.org/IDiscInfo/TotalAmountSellGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MostPopularGroup">
+      <soap12:operation soapAction="http://tempuri.org/IDiscInfo/MostPopularGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDiscBand">
+      <wsp:PolicyReference URI="#NetTcpBinding_IDiscInfo_AddDiscBand_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IDiscInfo/AddDiscBand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSell">
+      <soap12:operation soapAction="http://tempuri.org/IDiscInfo/AddSell" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DiscInfo">
+    <wsdl:port name="NetTcpBinding_IDiscInfo" binding="tns:NetTcpBinding_IDiscInfo">
+      <soap12:address location="net.tcp://localhost:6493/" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:6493/</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>User-ПК\User</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

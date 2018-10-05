@@ -1,0 +1,57 @@
+F:\29ПР31\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\DiscHostService.exe.config
+F:\29ПР31\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\DiscHostService.exe
+F:\29ПР31\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\DiscHostService.pdb
+F:\29ПР31\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\EntityFramework.dll
+F:\29ПР31\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\EntityFramework.SqlServer.dll
+F:\29ПР31\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\EntityFramework.xml
+F:\29ПР31\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\EntityFramework.SqlServer.xml
+F:\29ПР31\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\obj\Debug\DiscHostService.csproj.CoreCompileInputs.cache
+F:\29ПР31\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\obj\Debug\DiscHostService.csproj.CopyComplete
+F:\29ПР31\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\obj\Debug\DiscHostService.exe
+F:\29ПР31\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\obj\Debug\DiscHostService.pdb
+D:\Скрипник Ростислав\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\DiscHostService.exe.config
+D:\Скрипник Ростислав\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\DiscHostService.exe
+D:\Скрипник Ростислав\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\DiscHostService.pdb
+D:\Скрипник Ростислав\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\EntityFramework.dll
+D:\Скрипник Ростислав\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\EntityFramework.SqlServer.dll
+D:\Скрипник Ростислав\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\EntityFramework.xml
+D:\Скрипник Ростислав\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\bin\Debug\EntityFramework.SqlServer.xml
+D:\Скрипник Ростислав\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\obj\Debug\DiscHostService.csprojAssemblyReference.cache
+D:\Скрипник Ростислав\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\obj\Debug\DiscHostService.csproj.CoreCompileInputs.cache
+D:\Скрипник Ростислав\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\obj\Debug\DiscHostService.csproj.CopyComplete
+D:\Скрипник Ростислав\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\obj\Debug\DiscHostService.exe
+D:\Скрипник Ростислав\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\obj\Debug\DiscHostService.pdb
+F:\29ПР31\WCF\Урок 7 Обработка исключений\DiscHostService\DiscHostService\obj\Debug\DiscHostService.csprojResolveAssemblyReference.cache
+F:\29ПР31\WCF\Урок 7 Обработка исключений\132\DiscHostService\DiscHostService\obj\Debug\DiscHostService.csproj.CoreCompileInputs.cache
+F:\29ПР31\WCF\Урок 7 Обработка исключений\132\DiscHostService\DiscHostService\obj\Debug\DiscHostService.exe
+F:\29ПР31\WCF\Урок 7 Обработка исключений\132\DiscHostService\DiscHostService\obj\Debug\DiscHostService.pdb
+F:\29ПР31\WCF\Урок 7 Обработка исключений\132\DiscHostService\DiscHostService\bin\Debug\DiscHostService.exe.config
+F:\29ПР31\WCF\Урок 7 Обработка исключений\132\DiscHostService\DiscHostService\bin\Debug\DiscHostService.exe
+F:\29ПР31\WCF\Урок 7 Обработка исключений\132\DiscHostService\DiscHostService\bin\Debug\DiscHostService.pdb
+F:\29ПР31\WCF\Урок 7 Обработка исключений\132\DiscHostService\DiscHostService\bin\Debug\EntityFramework.dll
+F:\29ПР31\WCF\Урок 7 Обработка исключений\132\DiscHostService\DiscHostService\bin\Debug\EntityFramework.SqlServer.dll
+F:\29ПР31\WCF\Урок 7 Обработка исключений\132\DiscHostService\DiscHostService\bin\Debug\EntityFramework.xml
+F:\29ПР31\WCF\Урок 7 Обработка исключений\132\DiscHostService\DiscHostService\bin\Debug\EntityFramework.SqlServer.xml
+F:\29ПР31\WCF\Урок 7 Обработка исключений\132\DiscHostService\DiscHostService\obj\Debug\DiscHostService.csproj.CopyComplete
+F:\132\DiscHostService\DiscHostService\bin\Debug\DiscHostService.exe.config
+F:\132\DiscHostService\DiscHostService\bin\Debug\DiscHostService.exe
+F:\132\DiscHostService\DiscHostService\bin\Debug\DiscHostService.pdb
+F:\132\DiscHostService\DiscHostService\bin\Debug\EntityFramework.dll
+F:\132\DiscHostService\DiscHostService\bin\Debug\EntityFramework.SqlServer.dll
+F:\132\DiscHostService\DiscHostService\bin\Debug\EntityFramework.xml
+F:\132\DiscHostService\DiscHostService\bin\Debug\EntityFramework.SqlServer.xml
+F:\132\DiscHostService\DiscHostService\obj\Debug\DiscHostService.csproj.CoreCompileInputs.cache
+F:\132\DiscHostService\DiscHostService\obj\Debug\DiscHostService.csproj.CopyComplete
+F:\132\DiscHostService\DiscHostService\obj\Debug\DiscHostService.exe
+F:\132\DiscHostService\DiscHostService\obj\Debug\DiscHostService.pdb
+F:\Transactions\DiscHostService\DiscHostService\obj\Debug\DiscHostService.csproj.CoreCompileInputs.cache
+F:\Transactions\DiscHostService\DiscHostService\obj\Debug\DiscHostService.exe
+F:\Transactions\DiscHostService\DiscHostService\obj\Debug\DiscHostService.pdb
+F:\Transactions\DiscHostService\DiscHostService\bin\Debug\DiscHostService.exe.config
+F:\Transactions\DiscHostService\DiscHostService\bin\Debug\DiscHostService.exe
+F:\Transactions\DiscHostService\DiscHostService\bin\Debug\DiscHostService.pdb
+F:\Transactions\DiscHostService\DiscHostService\bin\Debug\EntityFramework.dll
+F:\Transactions\DiscHostService\DiscHostService\bin\Debug\EntityFramework.SqlServer.dll
+F:\Transactions\DiscHostService\DiscHostService\bin\Debug\EntityFramework.xml
+F:\Transactions\DiscHostService\DiscHostService\bin\Debug\EntityFramework.SqlServer.xml
+F:\Transactions\DiscHostService\DiscHostService\obj\Debug\DiscHostService.csproj.CopyComplete

@@ -1,0 +1,19 @@
+﻿<Window x:Class="DiscClient.MakePurschaseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiscClient"
+        mc:Ignorable="d"
+        Title="MakePurschaseWindow" Height="141.797" Width="262.109" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="txtDiscname" IsEnabled="False"/>
+                <ComboBox Name="cbCashier" />
+            </StackPanel>
+            <Button Name="btnSell" Content="Купить" Click="btnSell_Click" Margin="10px 10px 20px 30px" Width="100px"/>
+            <Button Content="Выйти" Name="btnExit" Click="btnExit_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
